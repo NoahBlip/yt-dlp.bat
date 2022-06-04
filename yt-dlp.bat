@@ -17,7 +17,7 @@ echo  ! [8] : UPDATE                ! -U                   !
 echo  ------------------------------------------------------
 echo.
 echo   -------------------------
-set /p DTYPE=.  Chose a number: 
+set /p DTYPE=.  choose a number: 
 if %DTYPE%==8 goto Update 
 set /p URL=.  Url: 
 echo   -------------------------
@@ -34,13 +34,13 @@ if %DTYPE%==7 goto Custom
 echo -- Show all options ...
 yt-dlp.exe -F %URL%
 echo.
-set /p F.ID=Chose a number (A or V or both A+V): 
+set /p F.ID=choose a number (A or V or both A+V): 
 echo.
 echo [1] : Download
 echo [2] : Stream
 echo [3] : Print URL
 echo.
-set /p DORS=Chose a number:
+set /p DORS=choose a number:
 echo.
 if %DORS%==1  goto All.d
 if %DORS%==2 goto All.s
@@ -125,7 +125,7 @@ goto start
 :Pl.Video
 echo 1: Start from
 echo 2: from X to Y
-set /p PLTYPE=Chose a number: 
+set /p PLTYPE=choose a number: 
 if %PLTYPE%==1 goto PLS 
 if %PLTYPE%==2 goto PLI
 
@@ -148,7 +148,7 @@ if %PLTYPE%==2 goto PLI
 :Pl.Audio
 echo 1: Start from
 echo 2: from X to Y
-set /p PLTYPE=Chose a number: 
+set /p PLTYPE=choose a number: 
 if %PLTYPE%==1 goto PLS.a if %PLTYPE%==2 goto PLI.a
 
     :PLS.a
